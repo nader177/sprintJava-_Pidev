@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AjoutProduitController">
+      <children>
+      <TextField fx:id="idP" layoutX="303.0" layoutY="82.0" promptText="id produit" />
+      <TextField fx:id="typeP" layoutX="303.0" layoutY="200.0" promptText="type produit" />
+      <TextField fx:id="stockP" layoutX="303.0" layoutY="163.0" promptText="stock de produit" />
+      <Button layoutX="452.0" layoutY="362.0" mnemonicParsing="false" onAction="#AjouterProduit" prefHeight="35.0" prefWidth="77.0" text="Ajouter" textFill="#22bc07">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button layoutX="529.0" layoutY="362.0" mnemonicParsing="false" onAction="#AfficherProduits" text="Afficher" textFill="#2400d7">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Label fx:id="usernameTF" layoutX="179.0" prefHeight="57.0" prefWidth="427.0" style="-fx-background-color: FF2C00;" text="        Ajouter produit" textAlignment="CENTER" textFill="#ffebeb" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <Blend />
+         </effect></Label>
+      <TextField fx:id="nomP" layoutX="303.0" layoutY="123.0" promptText="nom produit" />
+      <TextField fx:id="prixP" layoutX="303.0" layoutY="239.0" promptText="prix produit" />
+      <Button fx:id="insérer" layoutX="456.0" layoutY="309.0" mnemonicParsing="false" onAction="#insererimage" text="inserer" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <ListView fx:id="imagep" disable="true" fixedCellSize="1.0" layoutX="244.0" layoutY="275.0" prefHeight="103.0" prefWidth="200.0" style="-fx-background-color: F60905;" />
+      <Label layoutX="188.0" layoutY="314.0" prefHeight="17.0" prefWidth="45.0" text="image">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="244.0" layoutY="163.0" prefHeight="17.0" prefWidth="45.0" text="stock">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="244.0" layoutY="239.0" prefHeight="17.0" prefWidth="45.0" text="prix">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="244.0" layoutY="200.0" prefHeight="17.0" prefWidth="45.0" text="type">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="244.0" layoutY="123.0" prefHeight="17.0" prefWidth="45.0" text="nom">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="244.0" layoutY="82.0" prefHeight="17.0" prefWidth="45.0" text="id">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <VBox prefHeight="401.0" prefWidth="180.0" style="-fx-background-color: F14F2D;">
+         <children>
+            <Label prefHeight="74.0" prefWidth="180.0" text="   HEALTHLINE" textAlignment="CENTER" textFill="#eeeeee">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label prefHeight="27.0" prefWidth="184.0" text="Dashbord" textFill="#e8e8e8">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="31.0" prefWidth="180.0" text="Gestion produit" textFill="#f5f4f4">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label onMouseClicked="#gestionCmd" prefHeight="39.0" prefWidth="180.0" text="Gestion commande" textFill="#ebe4e4">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="32.0" prefWidth="184.0" text="Blog" textFill="#eeeaea">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="35.0" prefWidth="184.0" text="Medecin" textFill="#f2eded">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="39.0" prefWidth="180.0" text="Medicalents" textFill="#f8f5f5">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="39.0" prefWidth="187.0" text="Rendez-vous" textFill="#f8f5f5">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="39.0" prefWidth="180.0" text="icon" textFill="#f8f5f5">
+               <font>
+                  <Font size="16.0" />
+               </font>
+             
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
